@@ -1,1 +1,16 @@
-<h1>Hellos</h1>
+<!DOCTYPE html>
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <title>First angular app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="LunchCheckController">
+      <input type="text" ng-model="lunchItems">
+      <button type="button" name="button" ng-click="checkIfTooMuch()">Check If Too Much</button>
+      <p>{{result}}</p>
+    </div>
+  </body>
+</html>
